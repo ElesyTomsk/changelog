@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EleSy • ChangeLog</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <img src="../image/elesy_logo.svg" class="logo" alt="Logo">
+        <p id="name-web">ChangeLog</p>
+        <div class="information-projects">
+          <p>Проект — <span id="client">NULL</span></p>
+          <p>Заказчик — <span id="project-name">NULL</span></p>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="dropdown-conteiner">
+        <div class="dropdown-conteiner__version">
+          <label for="version">Версия: </label>
+          <select id="version">
+            <option value="1">Все версии</option>
+          </select>
+        </div>
+        <div class="dropdown-conteiner__action">
+          <label for="action">Действие: </label>
+          <select id="action">
+            <option value="1">Все действия</option>
+          </select>
+        </div>
+        <div class="dropdown-conteiner__object">
+          <label for="object">Объект: </label>
+          <select id="object">
+            <option value="1">Все объекты</option>
+          </select>
+        </div>
+        <div class="dropdown-conteiner__author">
+          <label for="author">Автор: </label>
+          <select id="author">
+            <option value="1">Все авторы</option>
+          </select>
+        </div>
+        <button onclick="recordInTable()" class="button-search">Сортировать</button>
+      </div>
+      <hr>
+      <div class="informations-container">
+        <div id="informations-object">
+          <table id="informations-table">
+            <thead id="informations-table__head">
+                <tr>
+                    <th>Версия</th>
+                    <th>Действие</th>
+                    <th>Объект <a id="link-objects" href="../objects/information.html">&#9193;</a></th>
+                    <th>Автор</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody id="informations-table__body">
+                <tr></tr>
+            </tbody>
+        </table>
+        </div>
+        
+      </div>
+      
+    </main>
+  </body>
+  <script src="../js/script.js"></script>
+</html>

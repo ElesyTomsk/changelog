@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border: none;
+    background-color: black;
+    height: 1px;
+    margin: 0;
+}
+
+.header{
+    height: 90px;
+    background-color: black;
+    padding: 0 100px;
+}
+
+.header-container{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.file-block{
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px auto;
+}
+
+.information-projects{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.information-projects > p{
+    margin: 5px 0;
+    font-size: 20px;
+    color: white;
+}
+
+.logo{
+    width: 100px;
+    height: 60px;
+    filter: grayscale(100%) contrast(0%) brightness(200%);
+}
+
+#name-web{
+    font-weight: 500;
+    font-size: 26px;
+    color: white;
+}
+
+.dropdown-conteiner{
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+select{
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+select > option{
+    font-size: 18px;
+}
+
+.informations-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+    justify-content: center;
+}
+
+.informations-object{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#informations-table{
+    width: 100%;
+    margin-top: 30px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+#informations-table th,
+#informations-table td {
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+    word-break: break-all; /* Разрыв слова */
+    white-space: normal;
+}
+
+#informations-table th {
+    background-color: rgb(75, 75, 75);
+    color: white;
+}
+
+#informations-table tbody tr:hover {
+    background-color: #ebebeb;
+}
+
+thead, tbody{
+    width: 100%;
+}
+
+#informations-table th:nth-child(1),/* Версия */
+#informations-table td:nth-child(1),
+#informations-table th:nth-child(3),/* Объект */
+#informations-table td:nth-child(3) {
+    width: 15%; 
+}
+
+#informations-table th:nth-child(2),/* Действие */
+#informations-table td:nth-child(2),
+#informations-table th:nth-child(4),/* Автор */
+#informations-table td:nth-child(4) {
+    width: 10%; 
+}
+
+#informations-table th:nth-child(5),
+#informations-table td:nth-child(5) {
+    width: 50%; /* Описание */
+}
+
+tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-search{
+    width: 170px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.5s ease;
+}
+
+.button-search:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.file-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    justify-content: flex-start;
+}
+
+#fileInput{
+    display: none; 
+}
+
+.file-button{
+    border: 2px solid black;
+    border-radius: 5px; 
+    font-size: 25px; 
+    width: 400px;
+    height: 60px;
+    display: inline-block;
+    text-align: center; 
+    line-height: 60px;
+    cursor: pointer; 
+    font-weight: 700; 
+    transition: background-color 0.1s ease, transform 0.5s ease;
+}
+
+#fileName{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.file-button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+#uploadForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-next{
+    background-color: black;
+    color: white; 
+    border-radius: 5px; 
+    font-size: 20px;
+    font-weight: 700; 
+    margin: 20px 0;
+    width: 250px;
+    min-height: 50px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.button-next:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+#link-objects{
+    cursor: pointer;
+    text-decoration: none;
+}

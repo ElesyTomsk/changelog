@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW -->
+
+<svg
+   xml:space="preserve"
+   width="142.81999mm"
+   height="83.675911mm"
+   version="1.1"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   viewBox="0 0 14281.999 8367.5911"
+   id="svg5"
+   sodipodi:docname="elesy_logo.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview5"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:document-units="mm"
+   inkscape:zoom="0.49264169"
+   inkscape:cx="260.83866"
+   inkscape:cy="173.55413"
+   inkscape:window-width="1366"
+   inkscape:window-height="705"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_x0020_1" />
+ <defs
+   id="defs1">
+  <style
+   type="text/css"
+   id="style1">
+   <![CDATA[
+    .fil0 {fill:#9D231F}
+    .fil1 {fill:#00467A}
+   ]]>
+  </style>
+ </defs>
+ <g
+   id="Layer_x0020_1"
+   inkscape:label="Layer 1"
+   inkscape:groupmode="layer"
+   transform="translate(-3601,-10275.444)">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  <g
+   id="_1941558133472">
+   <path
+   class="fil0"
+   d="m 10239,11056 c 81,-153 90,-350 -9,-521 -135,-252 -458,-332 -719,-189 -99,63 -189,162 -225,278 -512,925 -781,2362 -781,3970 0,1428 269,2713 647,3665 9,27 27,72 54,99 0,18 0,27 9,36 0,9 9,9 9,18 153,225 458,296 692,162 243,-135 332,-440 216,-692 -18,-27 -9,-18 -18,-27 -323,-880 -584,-1994 -584,-3261 0,-1410 305,-2650 710,-3539 0,0 0,0 0,0 z"
+   id="path1" />
+   <path
+   class="fil1"
+   d="m 4913,10625 c -36,-117 -108,-216 -225,-278 -252,-144 -566,-63 -719,189 -90,171 -90,368 0,521 0,0 0,0 0,0 332,746 593,1734 674,2856 h -521 v 0 c -296,0 -521,234 -521,530 0,278 225,521 521,521 v 0 h 548 c -54,1114 -296,2093 -584,2874 0,27 9,0 -9,45 -117,252 -36,557 207,692 234,135 539,63 692,-162 9,-9 27,-18 27,-18 0,-9 9,-18 9,-36 18,-27 27,-72 36,-108 377,-943 656,-2228 656,-3665 0,-1599 -269,-3045 -790,-3961 z"
+   id="path2" />
+   <path
+   class="fil1"
+   d="m 12063,12341 h 4114 v 4141 h -4114 z m 2075,2075 -404,-404 v -898 c 153,-395 683,-359 817,18 v 880 z m -72,1554 h -1401 c -314,-108 -458,-710 0,-871 l 503,-9 z m 0,-207 -9,-1231 -422,-377 c -117,-54 -252,-27 -368,0 -108,36 -305,314 -162,656 z m 153,0 v -1231 l 431,-377 c 117,-54 243,-27 359,0 117,36 314,314 171,656 z m 0,207 h 1401 c 314,-108 449,-710 0,-871 h -521 z"
+   id="path3" />
+   <polygon
+   class="fil0"
+   points="10787,16437 11074,14497 11074,16446 11613,16437 11613,12431 11128,12431 10832,14254 10832,12422 10320,12431 10320,16437 "
+   id="polygon3" />
+   <path
+   class="fil1"
+   d="m 5982,16518 v -377 c 216,-108 234,-162 225,-458 v -3332 h 2003 v 422 h -656 v 1320 h 656 v 404 h -656 v 1608 h 683 v 404 H 7015 v -3728 h -278 v 3144 c 27,332 -108,530 -386,593 h -368 z"
+   id="path4" />
+   <path
+   class="fil1"
+   d="m 16697,12215 c 0,332 260,593 593,593 332,0 593,-260 593,-593 0,-323 -260,-593 -593,-593 -332,0 -593,269 -593,593 z m 108,0 c 0,-278 216,-503 485,-503 269,0 476,225 476,503 0,278 -207,503 -476,503 -269,0 -485,-225 -485,-503 z m 260,296 h 117 v -252 h 90 c 126,0 126,63 126,117 9,99 9,108 27,135 h 108 c -18,-36 -18,-54 -18,-144 -9,-63 -9,-126 -90,-144 v 0 c 90,-36 108,-99 108,-135 0,-153 -135,-171 -198,-171 h -269 v 593 z m 117,-512 h 117 c 72,0 117,18 117,90 0,36 -18,90 -108,90 h -126 z"
+   id="path5" />
+  </g>
+ </g>
+</svg>
