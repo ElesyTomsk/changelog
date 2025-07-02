@@ -30,7 +30,7 @@ function handleFileUpload(event) {
 
     reader.onload = function(e) {
         localStorage.setItem('uploadedFileContent', e.target.result);
-        window.location.href = 'sorting/search.html';
+        window.location.href = 'sorting/search';
     };
 
     reader.onerror = function(e) {
