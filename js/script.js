@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         processFileContent(savedContent);
     } else {
         alert('Файл не был загружен');
-        window.location.href = '../index.html';
+        window.location.href = '../index';
     }
 });
 
