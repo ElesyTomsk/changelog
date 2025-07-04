@@ -10,7 +10,7 @@
     <header class="header">
       <div class="header-container">
         <img src="../image/elesy_logo.svg" class="logo" alt="Logo">
-        <p id="name-web">ChangeLog</p>
+        <a href="../index" title="Вернуться на главную" id="name-web">ChangeLog</a>
         <div class="information-projects">
           <p>Проект — <span id="client">NULL</span></p>
           <p>Заказчик — <span id="project-name">NULL</span></p>
@@ -21,29 +21,29 @@
       <div class="dropdown-conteiner">
         <div class="dropdown-conteiner__version">
           <label for="version">Версия: </label>
-          <select id="version">
+          <select id="version" title="Фильтр по версии">
             <option value="1">Все версии</option>
           </select>
         </div>
         <div class="dropdown-conteiner__action">
           <label for="action">Действие: </label>
-          <select id="action">
+          <select id="action" title="Фильтр по действию">
             <option value="1">Все действия</option>
           </select>
         </div>
         <div class="dropdown-conteiner__object">
           <label for="object">Объект: </label>
-          <select id="object">
+          <select id="object" title="Фильтр по объекту">
             <option value="1">Все объекты</option>
           </select>
         </div>
         <div class="dropdown-conteiner__author">
           <label for="author">Автор: </label>
-          <select id="author">
+          <select id="author" title="Фильтр по автору">
             <option value="1">Все авторы</option>
           </select>
         </div>
-        <button onclick="recordInTable()" class="button-search">Сортировать</button>
+        <button onclick="recordInTable()" class="button-search" title="Фильтровать по выбранным параметрам">Применить</button>
       </div>
       <hr>
       <div class="informations-container">
@@ -53,7 +53,7 @@
                 <tr>
                     <th>Версия</th>
                     <th>Действие</th>
-                    <th>Объект <a id="link-objects" href="../objects/information">&#9193;</a></th>
+                    <th>Объект</th>
                     <th>Автор</th>
                     <th>Описание</th>
                 </tr>
@@ -63,9 +63,7 @@
             </tbody>
         </table>
         </div>
-        
       </div>
-      
     </main>
   </body>
   <script src="../js/script.js"></script>
