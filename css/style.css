@@ -57,6 +57,13 @@ hr{
     text-decoration: none;
 }
 
+.information-projects > p{
+    margin: 5px 0;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
 .logo{
     width: 100px;
     height: 60px;
