@@ -7,33 +7,45 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
-        <img src="image/elesy_logo.svg" class="logo" alt="Logo">
-        <a href="index" title="Вернуться на главную" id="name-web">ChangeLog</a>
-        <div class="information-projects">
-          <p> АО ОПР</p>
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <div class="file-block">
-        <form id="uploadForm">
-            <div class="file-container">
-                <input type="file" id="fileInput"  accept=".txt" required onchange="handleFileUpload(event, 'txt')">
-                <label for="fileInput" title="Выбрать файл" class="file-button">Выбрать ChangeLog</label>
-                <span id="fileNameTxt">Выберите ChangeLog для просмотра</span>
-            </div>
-        </form>
-        <form id="uploadForm">
-          <div class="file-container">
-              <input type="file" id="excelFileInput"  accept=".xlsx" required onchange="handleFileUpload(event, 'xlsx')">
-              <label for="excelFileInput" title="Выбрать файл" class="file-button">Выбрать Excel</label>
-              <span id="fileNameXlsx">Выберите таблицу Excel для просмотра объектов</span>
+    <div class="page-container">
+      <header class="header">
+        <div class="header-container">
+          <img src="image/elesy_logo.svg" class="logo" alt="Logo">
+          <a href="index" title="Вернуться на главную" id="name-web">ChangeLog</a>
+          <div class="information-projects">
+            <p> АО ОПР</p>
           </div>
-        </form>
-      </div>
-    </main>
+        </div>
+      </header>
+      <main class="main">
+        <div class="file-block">
+          <form id="uploadForm">
+              <div class="file-container">
+                  <input type="file" id="fileInput"  accept=".txt" required onchange="handleFileUpload(event, 'txt')">
+                  <label for="fileInput" title="Выбрать файл" class="file-button">Выбрать ChangeLog</label>
+                  <span id="fileNameTxt">Выберите ChangeLog для просмотра</span>
+              </div>
+          </form>
+          <form id="uploadForm">
+            <div class="file-container">
+                <input type="file" id="excelFileInput"  accept=".xlsx" required onchange="handleFileUpload(event, 'xlsx')">
+                <label for="excelFileInput" title="Выбрать файл" class="file-button">Выбрать Excel</label>
+                <span id="fileNameXlsx">Выберите таблицу Excel для просмотра объектов</span>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-container">
+          <a class="link-company" href="https://elesy.ru/">АО «ЭлеСи»</a>
+          <p>Отдел перспективных разработок</p>
+          <div class="information-projects">
+            <a>&#128100; Горячев Алексей Олегович</a>
+            <a href="mailto:aleksey.goryachev@elesy.ru">&#9993; aleksey.goryachev@elesy.ru</a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
   <script src="js/file.js"></script>
 </html>
