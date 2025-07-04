@@ -10,17 +10,38 @@
     <header class="header">
       <div class="header-container">
         <img src="../image/elesy_logo.svg" class="logo" alt="Logo">
-        <p id="name-web">ChangeLog</p>
+        <a href="../index" title="Вернуться на главную" id="name-web">ChangeLog</a>
         <div class="information-projects">
           <p> АО ОПР</p>
         </div>
       </div>
     </header>
     <main class="main">
-      <input type="file" id="excelFile" accept=".xlsx" />
-      <div id="output"></div>
-      
+      <div class="dropdown-conteiner">
+        <div class="dropdown-conteiner__name">
+          <label for="name">Имя: </label>
+          <select id="name" title="Фильтр по имени">
+            <option value="1">Все имена</option>
+          </select>
+        </div>
+        <div class="dropdown-conteiner__prefab">
+          <label for="prefab">Prefab: </label>
+          <select id="prefab" title="Фильтр по prefab">
+            <option value="1">Все Prefab</option>
+          </select>
+        </div>
+        <div class="dropdown-conteiner__scene">
+          <label for="scene">Scene: </label>
+          <select id="scene" title="Фильтр по scene">
+            <option value="1">Все Scene</option>
+          </select>
+        </div>
+        <button onclick="filterExcelTable()" class="button-search" title="Фильтровать по выбранным параметрам">Применить</button>
+      </div>
+      <hr>
+      <div id="tableContainer"></div>
     </main>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js "></script>
+  <script src="../js/objects.js"></script>
 </html>
