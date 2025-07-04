@@ -6,6 +6,12 @@ body{
     padding: 0;
 }
 
+.page-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 hr{
     border: none;
     background-color: black;
@@ -19,7 +25,7 @@ hr{
     padding: 0 100px;
 }
 
-.header-container{
+.header-container, .footer-container{
     max-width: 1400px;
     height: 100%;
     display: flex;
@@ -41,12 +47,14 @@ hr{
 .information-projects{
     display: flex;
     flex-direction: column;
+    
 }
 
-.information-projects > p{
+.information-projects > a{
     margin: 5px 0;
-    font-size: 20px;
-    color: white;
+    font-size: 15px;
+    color: grey;
+    text-decoration: none;
 }
 
 .logo{
@@ -260,4 +268,25 @@ tr{
 #link-objects{
     cursor: pointer;
     text-decoration: none;
+}
+
+.main{
+    flex:1;
+}
+
+.footer{
+    height: 90px;
+    background-color: black;
+    padding: 0 100px;
+}
+
+.link-company{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.footer-container > p{
+    color: grey;
+    font-size: 20px;
 }
