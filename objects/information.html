@@ -7,40 +7,52 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header-container">
-        <img src="../image/elesy_logo.svg" class="logo" alt="Logo">
-        <a href="../index" title="Вернуться на главную" id="name-web">ChangeLog</a>
-        <div class="information-projects">
-          <p> АО ОПР</p>
+    <div class="page-container">
+      <header class="header">
+        <div class="header-container">
+          <img src="../image/elesy_logo.svg" class="logo" alt="Logo">
+          <a href="../index" title="Вернуться на главную" id="name-web">ChangeLog</a>
+          <div class="information-projects">
+            <p> АО ОПР</p>
+          </div>
         </div>
-      </div>
-    </header>
-    <main class="main">
-      <div class="dropdown-conteiner">
-        <div class="dropdown-conteiner__name">
-          <label for="name">Имя: </label>
-          <select id="name" title="Фильтр по имени">
-            <option value="1">Все имена</option>
-          </select>
+      </header>
+      <main class="main">
+        <div class="dropdown-conteiner">
+          <div class="dropdown-conteiner__name">
+            <label for="name">Имя: </label>
+            <select id="name" title="Фильтр по имени">
+              <option value="1">Все имена</option>
+            </select>
+          </div>
+          <div class="dropdown-conteiner__prefab">
+            <label for="prefab">Prefab: </label>
+            <select id="prefab" title="Фильтр по prefab">
+              <option value="1">Все Prefab</option>
+            </select>
+          </div>
+          <div class="dropdown-conteiner__scene">
+            <label for="scene">Scene: </label>
+            <select id="scene" title="Фильтр по scene">
+              <option value="1">Все Scene</option>
+            </select>
+          </div>
+          <button onclick="filterExcelTable()" class="button-search" title="Фильтровать по выбранным параметрам">Применить</button>
         </div>
-        <div class="dropdown-conteiner__prefab">
-          <label for="prefab">Prefab: </label>
-          <select id="prefab" title="Фильтр по prefab">
-            <option value="1">Все Prefab</option>
-          </select>
+        <hr>
+        <div id="tableContainer"></div>
+      </main>
+      <footer class="footer">
+        <div class="footer-container">
+          <a class="link-company" href="https://elesy.ru/">АО «ЭлеСи»</a>
+          <p>Отдел перспективных разработок</p>
+          <div class="information-projects">
+            <a>&#128100; Горячев Алексей Олегович</a>
+            <a href="mailto:aleksey.goryachev@elesy.ru">&#9993; aleksey.goryachev@elesy.ru</a>
+          </div>
         </div>
-        <div class="dropdown-conteiner__scene">
-          <label for="scene">Scene: </label>
-          <select id="scene" title="Фильтр по scene">
-            <option value="1">Все Scene</option>
-          </select>
-        </div>
-        <button onclick="filterExcelTable()" class="button-search" title="Фильтровать по выбранным параметрам">Применить</button>
-      </div>
-      <hr>
-      <div id="tableContainer"></div>
-    </main>
+      </footer>
+    </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js "></script>
   <script src="../js/objects.js"></script>
