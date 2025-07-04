@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const savedContent = localStorage.getItem('uploadedFileContent');
+    const savedContent = localStorage.getItem('uploadedTxtContent');
 
     if (savedContent) {
         processFileContent(savedContent);
@@ -145,7 +145,7 @@ function processFileContent(content) {
         outputClient.textContent = client;
     }
 
-    
+    recordInTable();
 }
 
 /// Запись в таблицу
@@ -187,7 +187,7 @@ function recordInTable() {
     }
 
     const versionColors = {};
-    const colorPalette = ['#ffffff', '#ebebeb', '#d7d7d7'];
+    const colorPalette = ['#ffffff', '#e5e5e5'];
     let colorIndex = 0;
 
     function assignColor(version) {
@@ -213,10 +213,3 @@ function recordInTable() {
         tableBody.appendChild(tr);
     });
 }
-
-
-
-
-  // Заполняем таблицу
-  populateTable(globalData);
-
