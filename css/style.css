@@ -41,7 +41,6 @@ hr{
 .information-projects{
     display: flex;
     flex-direction: column;
-    
 }
 
 .information-projects > p{
