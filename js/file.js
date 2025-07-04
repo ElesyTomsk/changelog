@@ -1,41 +1,63 @@
 /// Обновление названия файла
-function updateFileName() {
-    const fileInput = document.getElementById('fileInput');
-    const fileNameDisplay = document.getElementById('fileName');
-    const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : '';
+function updateFileName(inputElement, labelId) {
+    const fileNameDisplay = document.getElementById(labelId);
+    const fileName = inputElement.files.length > 0 ? inputElement.files[0].name : '';
     fileNameDisplay.textContent = `Ваш файл: ${fileName}`;
 }
 
 /// Просмотр на корректность файла
-function handleFileUpload(event) {
-    event.preventDefault();
+function handleFileUpload(event, fileType) {
+    const input = event.target;
+    const file = input.files[0];
 
-    const fileInput = document.getElementById('fileInput');
+    if (!file){
+        return;
+    } 
 
-    if (fileInput.files.length === 0) {
-        alert("Для продолжения выберите файл");
+    // Проверка расширения
+    const fileName = file.name;
+    const allowedExtensions = fileType === 'txt' 
+        ? /\.txt$/i 
+        : /\.xlsx$/i;
+
+    if (!allowedExtensions.test(fileName)) {
+        alert(`Пожалуйста, загрузите файл формата .${fileType}`);
+        input.value = ''; // Сбросить выбор файла
         return;
     }
 
-    const filePath = fileInput.value;
-    const allowedExtensions = /(\.txt)$/i;
-
-    if (!allowedExtensions.exec(filePath)) {
-        alert('Пожалуйста, загрузите файл формата .txt');
-        return;
+    // Очистка localStorage перед загрузкой нового файла
+    if (fileType === 'txt') {
+        localStorage.removeItem('uploadedTxtContent');
+    } else {
+        localStorage.removeItem('uploadedXlsxContent');
     }
 
-    const file = fileInput.files[0];
+    // Чтение файла
     const reader = new FileReader();
+    const isExcel = fileType === 'xlsx';
 
     reader.onload = function(e) {
-        localStorage.setItem('uploadedFileContent', e.target.result);
-        window.location.href = 'sorting/search';
+        if (isExcel) {
+            const data = new Uint8Array(e.target.result);
+            localStorage.setItem('uploadedXlsxContent', JSON.stringify(Array.from(data)));
+            window.location.href = 'objects/information';
+        } 
+        else {
+            localStorage.setItem('uploadedTxtContent', e.target.result);
+            window.location.href = 'sorting/search';
+        }
     };
 
-    reader.onerror = function(e) {
+    reader.onerror = function() {
         alert('Ошибка чтения файла');
     };
 
-    reader.readAsText(file);
+    if (isExcel) {
+        reader.readAsArrayBuffer(file);
+    } else {
+        reader.readAsText(file);
+    }
+
+    updateFileName(input, fileType === 'txt' ? 'fileNameTxt' : 'fileNameXlsx');
 }
